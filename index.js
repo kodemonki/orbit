@@ -6,9 +6,9 @@ let root = document,
 
 draggables = root.querySelectorAll(".draggable");
 
-draggables.forEach(initDrag);
+draggables.forEach(initItems);
 
-function initDrag(item) {
+function initItems(item) {
   item.img = item.firstElementChild;
   item.radius = 20 + Math.random() * (centerX * 0.7);
   item.angle = Math.random() * 360;
